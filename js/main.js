@@ -3,7 +3,7 @@
 const $form = document.querySelector('form');
 if (!$form) throw new Error('$form not found');
 const $img = document.querySelector('img');
-const $photoURLInput = document.querySelector('#photo-url');
+const $photoURLInput = document.querySelector('#photo');
 $photoURLInput?.addEventListener('change', () => {
   $img?.setAttribute('src', $photoURLInput.value);
 });
