@@ -1,21 +1,18 @@
+'use strict';
 /* global data, writeEntry */
-
 const $form = document.querySelector('form');
 if (!$form) throw new Error('$form not found');
-
-const $img = document.querySelector('img') as HTMLImageElement;
-const $photoURLInput = document.querySelector('#photo') as HTMLInputElement;
-
+const $img = document.querySelector('img');
+const $photoURLInput = document.querySelector('#photo');
 $photoURLInput?.addEventListener('change', () => {
   $img?.setAttribute('src', $photoURLInput.value);
 });
-
-$form.addEventListener('submit', (event: Event) => {
+$form.addEventListener('submit', (event) => {
   event.preventDefault();
   const $formElements = $form.elements;
-  const title = ($formElements.namedItem('title') as HTMLInputElement).value;
-  const photoURL = ($formElements.namedItem('photo') as HTMLInputElement).value;
-  const notes = ($formElements.namedItem('notes') as HTMLTextAreaElement).value;
+  const title = $formElements.namedItem('title').value;
+  const photoURL = $formElements.namedItem('photo').value;
+  const notes = $formElements.namedItem('notes').value;
   const entry = {
     title,
     photoURL,
