@@ -19,6 +19,7 @@
     <header>
       <div class="container">
         <h1>Code Journal</h1>
+        <h3><a class="entries-link">Entries</a></h3>
       </div>
     </header>
     <main class="container">
@@ -33,13 +34,13 @@
               <div class="input-area">
                 <label for="title">Title</label>
                 <div>
-                  <input type="text" id="title" name="title" />
+                  <input type="text" id="title" name="title" required />
                 </div>
               </div>
               <div class="input-area">
                 <label for="photo-url">Photo URL</label>
                 <div>
-                  <input type="text" id="photo" name="photo" />
+                  <input type="text" id="photo" name="photo" required />
                 </div>
               </div>
             </div>
@@ -49,7 +50,7 @@
               <div>
                 <label for="notes">Notes</label>
                 <div>
-                  <textarea id="notes" name="notes"></textarea>
+                  <textarea id="notes" name="notes" required></textarea>
                 </div>
               </div>
             </div>
@@ -59,7 +60,13 @@
           </div>
         </form>
       </div>
-      <div data-view="entries" class="hidden"></div>
+      <div data-view="entries" class="hidden">
+        <div class="entries-heading">
+          <h2>Entries</h2>
+          <button class="new-entry">NEW</button>
+        </div>
+        <ul></ul>
+      </div>
     </main>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>

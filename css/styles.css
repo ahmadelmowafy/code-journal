@@ -31,8 +31,32 @@ header {
   font-size: 1rem;
 }
 
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+header .container > h3 {
+  margin-left: 20px;
+}
+
+h3 :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 h2 {
   font-size: 2rem;
+}
+
+.entries-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-entry {
+  padding: 5px 10px;
 }
 
 input {
@@ -43,6 +67,17 @@ input {
   padding-left: 10px;
 }
 
+input:focus {
+  outline: none;
+  border: 2px solid #562b81;
+  border-radius: 2px;
+}
+
+.no-entries {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 textarea {
   width: 100%;
   height: 150px;
@@ -51,9 +86,28 @@ textarea {
   padding: 10px;
 }
 
+textarea:focus {
+  outline: none;
+  border: 2px solid #562b81;
+  border-radius: 2px;
+}
+
 button {
   color: white;
   background-color: #562b81;
   padding: 10px;
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.journal-entry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-half img {
   border-radius: 5px;
 }
