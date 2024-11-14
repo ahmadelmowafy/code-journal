@@ -1,5 +1,6 @@
 body {
   background-color: #f0f0f0;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 .input-area {
@@ -49,6 +50,17 @@ h2 {
   font-size: 2rem;
 }
 
+.title-and-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-solid {
+  cursor: pointer;
+  color: #562b81;
+}
+
 .entries-heading {
   display: flex;
   justify-content: space-between;
@@ -84,6 +96,7 @@ textarea {
   margin-top: 0.75rem;
   font-size: 1rem;
   padding: 10px;
+  font-family: sans-serif;
 }
 
 textarea:focus {
@@ -97,6 +110,7 @@ button {
   background-color: #562b81;
   padding: 10px;
   border-radius: 5px;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 li {
