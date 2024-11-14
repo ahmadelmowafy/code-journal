@@ -12,6 +12,7 @@ function readEntry(): any {
   if (entryItem) {
     return JSON.parse(entryItem);
   }
+  console.log('does this fire');
   return {
     view: 'entry-form',
     entries: [],
